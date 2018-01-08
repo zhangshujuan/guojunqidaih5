@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>确认订单</title>
+        <link rel="stylesheet" href="../static/style/sui.css">
+        <link rel="stylesheet" href="../static/style/order.css">
+        <link rel="stylesheet" href="../static/script/swiper/swiper-3.4.0.min.css">
+    </head>
+
+    <body>
+
+        <div class="page page-current">
+            <!-- 标题栏 -->
+            <header class="bar bar-nav">
+                <button class="button button-link button-nav pull-left">
+                    <span class="icon icon-callback"></span>
+                </button>
+                <h1 class="title">确认订单</h1>
+            </header>
+
+            <!-- 工具栏 -->
+            <nav class="bar bar-tab">
+                <a class="tab-item external active" href="#">
+                    <span class="icon icon-sy"></span>
+                    <span class="tab-label">首页</span>
+                </a>
+                <a class="tab-item external" href="#">
+                    <span class="icon icon-account"></span>
+                    <span class="tab-label">开户</span>
+                </a>
+                <a class="tab-item external" href="#">
+                    <span class="icon icon-share1"></span>
+                    <span class="tab-label">分享</span>
+                </a>
+                <a class="tab-item external" href="#">
+                    <span class="icon icon-my"></span>
+                    <span class="tab-label">我</span>
+                </a>
+            </nav>
+
+            <!-- 这里是页面内容区 -->
+            <div class="content">
+                <section class="order-container">
+                    <div class="list-block">
+                        <ul>
+                            <!-- Text inputs -->
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">订单编号</div>
+                                        <div class="item-input">
+                                            <input type="text" value="123456789012">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content-block-title">支付方式</div>
+                    <div class="list-block">
+                        <ul>
+                            <!-- Text inputs -->
+                            <li>
+                                <a class="item-content" href="#">
+                                    <div class="item-media"><i class="icon icon-chat"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title label">微信支付</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="btn-bottom">
+                    <div class="content-block">
+                        <div class="row">
+                            <div class="col-60">￥12,123,200.00</div>
+                            <div class="col-40"><a href="#" class="button button-big button-fill button-danger">去支付</a></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

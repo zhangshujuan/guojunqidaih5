@@ -1,0 +1,135 @@
+@import "base/reset";
+@import "base/flex";
+@import "base/mixin-background";
+@import "base/mixin-position";
+@import "base/mixin-transform";
+@import "base/common";
+.bill-contain{
+	.first-line{
+		margin-left: 0;
+		.pull-left{
+			float: left;
+			font-size: 30/$ppr;
+			color: #333;
+			line-height: 97/$ppr;
+			margin-left: 30/$ppr;
+			input{
+				-webkit-appearance: radio;
+				width: 28/$ppr;
+				height: 28/$ppr;
+				margin-right: 13/$ppr;
+			}
+		}
+	}
+	.list-block{
+		margin:0;
+		.item-content{
+			position: relative;
+			height: 90/$ppr;
+			&:after{
+				position: absolute;
+				width: 100%;
+				background-color: #e7e7e7;
+				display: block;
+				transform-origin: 50% 100%;
+				bottom: 0;
+				right: auto;
+				top: auto;
+				height: 1px;
+				z-index: 15;
+				left: 0;
+				content: '';
+			}
+			.item-inner{
+				&:after{
+					display: none;
+				}
+				.item-title{
+					font-size: 30/$ppr;
+					color: #333;
+				}
+			}
+		}
+		.item-title{
+			width: 25%;
+		}
+		.item-input{
+			width:75%;
+			&.row{
+				margin-left: 0;
+				.col-33{
+					select{
+						border:1px solid #eaeaea;
+						-webkit-appearance: select;
+						background: #f7f7f7;
+						line-height: 70/$ppr;
+						font-size: 26/$ppr;
+						color: #333;
+						background-image: url(../image/icon-select-24x14.png);
+						background-size: 24/$ppr 14/$ppr;
+						background-repeat: no-repeat;
+						background-position: 95% center;
+						padding-left: 16/$ppr;
+					}
+
+				}
+			}
+		}
+	}
+	.content-block-title{
+		margin: 30/$ppr 0.75rem 19/$ppr 0.75rem;
+		font-size: 26/$ppr;
+		color: #999;
+	}
+}
+.btn-bottom{
+	background-color: #fff;
+	position: fixed;
+	bottom: 100/$ppr;
+	width: 100%;
+	&:before, &:after{
+		content: '';
+		position: absolute;
+		right: auto;
+		height: 1px;
+		background-color: #e1e1e1;
+		z-index: 15;
+		left: 0;
+		width: 100%;
+	}
+	.content-block{
+		margin: 0;
+		padding:13/$ppr 15/$ppr 13/$ppr 28/$ppr;
+		.button-danger{
+			background: #ff6b6b;
+			font-size: 32/$ppr;
+			line-height: 90/$ppr;
+		}
+		.button-success{
+			background: #72b4ff;
+			font-size: 32/$ppr;
+			line-height: 90/$ppr;
+		}
+		.col-60{
+			font-size: 28/$ppr;
+			color: #ff432a;
+			line-height: 90/$ppr;
+			.button-gray{
+				width:113/$ppr;
+				height: 46/$ppr;
+				line-height: 46/$ppr;
+				color: #999;
+				font-size: 16/$ppr;
+				border:1px solid #999;
+				display: inline-block;
+			}
+		}
+		.col-40{
+			width: 40%;
+			margin-left: 0;
+		}
+	}
+}
+.bar-nav~.content{
+	bottom: 203/$ppr;
+}

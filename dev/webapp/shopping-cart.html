@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>购物车</title>
+  <link rel="stylesheet" href="../static/style/sui.css">
+  <link rel="stylesheet" href="../static/style/shopping-cart.css">
+  <link rel="stylesheet" href="../static/style/share.css">
+  <style media="screen">
+    .overlay {
+      bottom: 2.5rem;
+    }
+    .overlay .pad {
+      bottom: 3.25rem;
+    }
+    .overlay .arrow {
+      bottom: 2.85rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page page-current">
+    <!-- 标题栏 -->
+    <header class="bar bar-nav">
+      <button class="button button-link button-nav pull-left">
+        <span class="icon icon-callback"></span>
+      </button>
+      <button class="button button-link button-nav pull-right" id="rightBtn">
+        编辑
+      </button>
+      <h1 class="title">购物车</h1>
+    </header>
+
+    <!-- 内容 -->
+    <div class="content">
+      <div class="card">
+        <div class="selectAlertHolder">
+          <div class="selectAlert"></div>
+        </div>
+        <div class="card-content">
+          <img src="../static/image/example-2.png" alt="" />
+          <div class="right">
+            <div class="itemTitle">
+              标题标题标题标题
+            </div>
+            <div class="single-price">
+              <span>单价：￥</span>
+              <span class="singlePrice">1234.01</span>
+            </div>
+            <div class="price">
+              <span>￥</span>
+              <span class="totalPrice">0.00</span>
+            </div>
+          </div>
+          <div class="countControl">
+            <span class="input-number-decrement">–</span>
+            <input class="input-number" type="text" value="1" min="1" max="10" disabled="disabled">
+            <span class="input-number-increment">+</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="selectAlertHolder">
+          <div class="selectAlert"></div>
+        </div>
+        <div class="card-content">
+          <img src="../static/image/example-2.png" alt="" />
+          <div class="right">
+            <div class="itemTitle">
+              标题标题标题标题
+            </div>
+            <div class="single-price">
+              <span>单价：￥</span>
+              <span class="singlePrice">1234.02</span>
+            </div>
+            <div class="price">
+              <span>￥</span>
+              <span class="totalPrice">0.00</span>
+            </div>
+          </div>
+          <div class="countControl">
+            <span class="input-number-decrement">–</span>
+            <input class="input-number" type="text" value="1" min="1" max="10" disabled="disabled">
+            <span class="input-number-increment">+</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="selectAlertHolder">
+          <div class="selectAlert"></div>
+        </div>
+        <div class="card-content">
+          <img src="../static/image/example-2.png" alt="" />
+          <div class="right">
+            <div class="itemTitle">
+              标题标题标题标题
+            </div>
+            <div class="single-price">
+              <span>单价：￥</span>
+              <span class="singlePrice">1234.03</span>
+            </div>
+            <div class="price">
+              <span>￥</span>
+              <span class="totalPrice">0.00</span>
+            </div>
+          </div>
+          <div class="countControl">
+            <span class="input-number-decrement">–</span>
+            <input class="input-number" type="text" value="1" min="1" max="10" disabled="disabled">
+            <span class="input-number-increment">+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="totalPad bar">
+      <div class="all">
+        <div class="selectAlertHolder">
+          <div class="selectAlert"></div>
+        </div>
+        <div class="selectAll">
+          全选
+        </div>
+      </div>
+      <a href="#" class="button button-fill submit">结 算</a>
+      <div class="totalPrice">
+        ￥0
+      </div>
+    </div>
+
+    <!-- 工具栏 -->
+    <nav class="bar bar-tab">
+      <a class="tab-item external active" href="#">
+        <span class="icon icon-sy"></span>
+        <span class="tab-label">首页</span>
+      </a>
+      <a class="tab-item external" href="#">
+        <span class="icon icon-account"></span>
+        <span class="tab-label">开户</span>
+      </a>
+      <a class="tab-item external" id="shareTabBarItem">
+        <span class="icon icon-share1"></span>
+        <span class="tab-label">分享</span>
+      </a>
+      <a class="tab-item external" href="#">
+        <span class="icon icon-my"></span>
+        <span class="tab-label">我</span>
+      </a>
+    </nav>
+
+    <div class="overlay">
+      <div class="pad">
+        <div class="title">
+          分享到
+        </div>
+        <div class="shareItems">
+          <ul>
+            <li id="1">
+              <div class="shareItemIcon">
+
+              </div>
+              <div class="shareItemTitle">
+                分享至微信
+              </div>
+            </li>
+            <li id="2">
+              <div class="shareItemIcon">
+
+              </div>
+              <div class="shareItemTitle">
+                分享至朋友圈
+              </div>
+            </li>
+            <li id="3">
+              <div class="shareItemIcon">
+
+              </div>
+              <div class="shareItemTitle">
+                新浪微博
+              </div>
+            </li>
+            <li id="4">
+              <div class="shareItemIcon">
+
+              </div>
+              <div class="shareItemTitle">
+                分享至QQ
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="arrow">
+      </div>
+    </div>
+  </div>
+
+  <script src="../static/script/zepto/zepto-1-1-6.js"></script>
+  <script src="../static/script/sui/sm.js"></script>
+  <script type="text/javascript">
+    var rightBtn = $('#rightBtn')
+    var editing = false
+    var items = $(".card")
+    var totalPad = $(".totalPad")
+    var mainTotalPrice = totalPad.find('.totalPrice')
+    var delete_submit_btn = totalPad.find('a.button')
+    var totalAll = totalPad.find('.all')
+    var selectAllBtn = totalPad.find('.selectAll')
+    var selectAllAlert = totalPad.find('.selectAlert')
+
+    delete_submit_btn.click(function() {
+      if (editing) {
+        var _items = items
+        _items.each(function(index, el) {
+          var _this = _items.eq(index)
+          var _selectAlert = _this.find('.selectAlert')
+          if (_selectAlert.hasClass('selected')) {
+            _this.remove()
+          }
+        })
+        items = $(".card")
+      } else {
+        alert('✅ 结算')
+      }
+    })
+
+    rightBtn.click(function(event) {
+      editing = !editing
+      rightBtn.text(editing ? "退出编辑" : "编辑")
+      delete_submit_btn.text(editing ? "删 除" : "结 算")
+      mainTotalPrice.css('display', editing ? 'none' : 'block');
+      calculateTotalPrice()
+    })
+
+    totalAll.click(function() {
+
+      var selectCount = 0
+      items.each(function(index, el) {
+        var _this = items.eq(index)
+        var _selectAlert = _this.find('.selectAlert')
+        if (_selectAlert.hasClass('selected')) {
+          selectCount += 1
+        }
+      });
+      var hasSelectAll = (items.length == selectCount) && (items.length != 0)
+
+      if (editing) {
+        if (hasSelectAll) {
+          items.each(function(index, el) {
+            var _this = items.eq(index)
+            var _selectAlert = _this.find('.selectAlert')
+            _selectAlert.removeClass('selected')
+          });
+          selectAllAlert.removeClass('selected')
+        } else {
+          items.each(function(index, el) {
+            var _this = items.eq(index)
+            var _selectAlert = _this.find('.selectAlert')
+            _selectAlert.addClass('selected')
+          });
+          selectAllAlert.addClass('selected')
+        }
+      } else {
+        if (hasSelectAll) {
+          items.each(function(index, el) {
+            var _this = items.eq(index)
+            var _selectAlert = _this.find('.selectAlert')
+            _selectAlert.removeClass('selected')
+          });
+          selectAllAlert.removeClass('selected')
+          calculateTotalPrice()
+        } else {
+          items.each(function(index, el) {
+            var _this = items.eq(index)
+            var _selectAlert = _this.find('.selectAlert')
+            _selectAlert.addClass('selected')
+          });
+          selectAllAlert.addClass('selected')
+          calculateTotalPrice()
+        }
+      }
+    })
+
+    initUI()
+    itemsBindClick()
+
+    function initUI() {
+      items.each(function(index, el) {
+        var _this = items.eq(index)
+        var _input = _this.find('.input-number')
+        var _selectAlert = _this.find('.selectAlert')
+        var _totalPrice = _this.find('.totalPrice')
+        var _singlePrice = _this.find('.singlePrice')
+        _totalPrice.html(
+          (
+            parseFloat(_input.val()) * parseFloat(_singlePrice.html())
+          ).toFixed(2)
+        )
+      })
+    }
+
+    function itemsBindClick() {
+      itemsUnbindClick()
+      items.click(function(event) {
+        event.stopPropagation()
+
+        var _class = event.target.className
+        var _this = $(this)
+        var _input = _this.find('.input-number')
+        var _selectAlert = _this.find('.selectAlert')
+        var _totalPrice = _this.find('.totalPrice')
+        var _singlePrice = _this.find('.singlePrice')
+
+        switch (_class) {
+          case 'input-number-increment':
+          case 'input-number-decrement':
+            var _increase = _class == 'input-number-increment'
+
+            // var _minV = _input.attr('min')
+            // var _maxV = _input.attr('max')
+
+            var min = _input.attr('min') || false
+            var max = _input.attr('max') || false
+            var value = parseInt(_input.val())
+
+            if (_increase) {
+              if (!max || value < max) {
+                _input.val(value + 1)
+              }
+            } else {
+              if (!min || value > min) {
+                _input.val(value - 1)
+              }
+            }
+
+            _totalPrice.html(
+              (
+                parseFloat(_input.val()) * parseFloat(_singlePrice.html())
+              ).toFixed(2)
+            )
+
+            break
+          case 'selectAlertHolder':
+          case 'selectAlert':
+          case 'selectAlert selected':
+            if (_selectAlert.hasClass('selected')) {
+              _selectAlert.removeClass('selected')
+            } else {
+              _selectAlert.addClass('selected')
+            }
+            break
+          default:
+            break
+        }
+
+        calculateTotalPrice()
+      })
+    }
+
+    function itemsUnbindClick() {
+      items.unbind('click')
+    }
+
+    //  TODO: Add ","
+    function calculateTotalPrice() {
+
+      var mainPrice = 0.00
+
+      items.each(function(index, el) {
+        var _this = items.eq(index)
+        var _input = _this.find('.input-number')
+        var _selectAlert = _this.find('.selectAlert')
+        var _totalPrice = _this.find('.totalPrice')
+        var _singlePrice = _this.find('.singlePrice')
+
+        if (!_selectAlert.hasClass('selected')) {
+          return
+        }
+
+        mainPrice += parseFloat((
+          parseFloat(_input.val()) * parseFloat(_singlePrice.html())
+        ).toFixed(2))
+      })
+      mainTotalPrice.html("￥" + mainPrice.toFixed(2))
+    }
+  </script>
+  <script type="text/javascript">
+    $(function() {
+      var overlay = $('.overlay')
+
+      $("#shareTabBarItem").click(function(event) {
+        if (overlay.css('display') == 'none') {
+          overlay.css('display', 'block');
+        } else {
+          overlay.css('display', 'none');
+        }
+      });
+
+      overlay.click(function(event) {
+        if (event.target.className === 'overlay') {
+          overlay.css('display', 'none');
+        }
+      });
+
+      overlay.find('li').click(function(event) {
+        var _id = ""
+        if (event.target.className == "") {
+          _id = event.target.id;
+        } else {
+          _id = event.target.parentElement.id
+        }
+
+        switch (_id) {
+
+          case "1":
+            console.log(1);
+            break;
+          case "2":
+            console.log(2);
+            break;
+          case "3":
+            console.log(3);
+            break;
+          case "4":
+            console.log(4);
+            break;
+          default:
+
+        }
+      });
+    })
+  </script>
+
+</body>
+
+</html>

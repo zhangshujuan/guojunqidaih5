@@ -1,0 +1,130 @@
+@import "base/reset";
+@import "base/flex";
+@import "base/mixin-background";
+@import "base/mixin-position";
+@import "base/mixin-transform";
+@import "base/common";
+.product-top{
+	padding: 10/$ppr;
+	margin: 10/$ppr;
+	background: #fff;
+	border-radius: 5/$ppr;
+	box-shadow:0 0  2/$ppr rgba(0, 0, 0, .15);
+	img{
+		width:100%;
+	}
+	.row{
+		margin-left: 0;
+		.pull-left{
+			height: 60/$ppr;
+			background: #ff432a;
+			line-height: 60/$ppr;
+			width: 50%;
+			padding-left: 1%;
+			.ft12{
+				font-size: 12/$ppr;
+				color: #ff432a;
+				background: #fff;
+				padding: 0 2/$ppr;
+			}
+			.ft28{
+				font-size: 28/$ppr;
+				color: #fff;
+			}
+		}
+		.pull-right{
+			padding-left: 1%;
+			height: 60/$ppr;
+			background: #444444;
+			line-height: 60/$ppr;
+			width: 50%;
+			.ft18{
+				font-size: 18/$ppr;
+				color: #fff;
+			}
+			.ft24{
+				font-size: 24/$ppr;
+				color: #fff;
+			}
+		}
+		//产品详情2
+		.col-100{
+			width: 100%;
+			padding-left: 15/$ppr;
+			margin-left: 0;
+		}
+	}
+	.product-title{
+		font-size: 30/$ppr;
+		color: #0080cc;
+		margin: 35/$ppr 0 25/$ppr 10/$ppr;
+	}
+}
+
+.card{
+	.card-header{
+		font-size: 24/$ppr;
+		color: #333;
+	}
+	.card-content{
+		font-size: 18/$ppr;
+		color: #666;
+		//详情2
+		.list-block{
+			margin: 0;
+			li{
+				min-height: 44/$ppr;
+				&:nth-child(odd){
+					background: #f5f5f5;
+				}
+				&:nth-child(even){
+					background: #fff;
+				}
+				.item-title, .item-after{
+					font-size: 18/$ppr;
+					color: #333;
+				}
+				.item-inner{
+					min-height: 44/$ppr;
+					&:after{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+.btn-bottom{
+	background-color: #fff;
+	position: fixed;
+	bottom: 100/$ppr;
+	width: 100%;
+	&:before, &:after{
+		content: '';
+		position: absolute;
+		right: auto;
+		height: 1px;
+		background-color: #e1e1e1;
+		z-index: 15;
+		left: 0;
+		width: 100%;
+	}
+	.content-block{
+		margin: 0;
+		padding-top:13/$ppr;
+		padding-bottom:13/$ppr;
+		.button-danger{
+			background: #ff6b6b;
+			font-size: 32/$ppr;
+			line-height: 90/$ppr;
+		}
+		.button-success{
+			background: #72b4ff;
+			font-size: 32/$ppr;
+			line-height: 90/$ppr;
+		}
+	}
+}
+.bar-nav~.content{
+	bottom: 203/$ppr;
+}

@@ -1,0 +1,261 @@
+$ppr: 20/rem;
+$_contentHeight: 75/$ppr;
+
+.button.button-fill:active {
+  background-color: #ff7b7b;
+}
+
+.content {
+  bottom: 2.875rem + 2.5rem;
+}
+
+.selectAlertHolder {
+  width: 17/$ppr;
+  float: left;
+
+  .selectAlert {
+    width: 14/$ppr;
+    height: 14/$ppr;
+    border-radius: 7/$ppr;
+    border: 0.05rem solid #9b9b9b;
+  }
+
+  .selected {
+    border: 0 solid #9b9b9b;
+    background-image: url("../image/check_48px_1115944_easyicon.net.png");
+    background-size: 100%;
+  }
+}
+
+.card {
+  margin: 7/$ppr;
+  box-shadow: none;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+
+  .selectAlertHolder {
+    height: $_contentHeight;
+
+    .selectAlert {
+      margin-top: $_contentHeight / 2 - 7/$ppr;
+    }
+  }
+
+  .card-content {
+    height: $_contentHeight;
+    box-shadow: 0 0.05rem 0.1rem rgba(0,0,0,.3);
+    background-color: white;
+    margin-left: 17/$ppr;
+    border-radius: 0.1rem;
+
+    img {
+      height: $_contentHeight;
+      width: $_contentHeight;
+      float: left;
+    }
+
+    .right {
+      float: left;
+      height: 100%;
+
+      > * {
+        margin-left: 5/$ppr;
+      }
+
+      .itemTitle {
+        font-weight: bold;
+        font-size: 14/$ppr;
+        margin-top: 5/$ppr;
+      }
+
+      .single-price {
+        font-size: 12/$ppr;
+        margin-top: 3/$ppr;
+      }
+
+      .price {
+        margin-top: 7/$ppr;
+
+        > span {
+          color: #ff6c47;
+          font-weight: bold;
+          font-size: 13/$ppr;
+        }
+      }
+    }
+
+    .countControl {
+      width: 46/$ppr;
+      height: 16/$ppr;
+      float: right;
+      margin-top: $_contentHeight - 26/$ppr;
+
+      * {
+        display: inline-block;
+      }
+
+      .input-number {
+        width: 14/$ppr;
+        text-align: center;
+        border: none;
+        border-top: 2/$ppr solid #cccccc;
+        border-bottom: 2/$ppr solid #cccccc;
+        outline: none;
+        font-size: 12/$ppr;
+        padding: 0;
+        margin: 0;
+      }
+
+      .input-number,
+      .input-number-decrement,
+      .input-number-increment {
+        height: 100%;
+        user-select: none;
+      }
+
+      .input-number-decrement,
+      .input-number-increment {
+        display: inline-block;
+        width: 13/$ppr;
+        line-height: 13/$ppr;
+        color: white;
+        background: #cccccc;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+      }
+
+      .input-number-decrement:active,
+      .input-number-increment:active {
+        background: #dddddd;
+      }
+
+      .input-number-decrement {
+        border-right: none;
+        border-radius: 2/$ppr 0 0 2/$ppr;
+        margin-right: -0.2rem;
+      }
+
+      .input-number-increment {
+        border-left: none;
+        border-radius: 0 2/$ppr 2/$ppr 0;
+        margin-left: -0.2rem;
+      }
+    }
+  }
+}
+$totalPadHeight: 58/$ppr;
+
+.totalPad {
+  height: $totalPadHeight;
+  width: 100%;
+  bottom: 50/$ppr;
+  padding: 0;
+  table-layout: fixed;
+  background-color: white;
+
+  .all {
+    height: $totalPadHeight;
+    float: left;
+
+    .selectAlertHolder {
+      height: $totalPadHeight;
+
+      .selectAlert {
+        margin-top: $totalPadHeight / 2 - 7/$ppr;
+        margin-left: 5/$ppr;
+      }
+    }
+
+    .selectAll {
+      height: $totalPadHeight;
+      width: 80/$ppr;
+      line-height: $totalPadHeight;
+      font-size: 16/$ppr;
+      padding-left: 26/$ppr;
+    }
+  }
+
+  .totalPrice {
+    height: $totalPadHeight;
+    color: #ff6b6b;
+    line-height: $totalPadHeight;
+    margin-right: 8/$ppr;
+    float: right;
+  }
+
+  .submit {
+    background-color: #ff6b6b;
+    color: white;
+    height: 45/$ppr;
+    width: 93/$ppr;
+    margin-right: 7/$ppr;
+    float: right;
+    border-radius: 2/$ppr;
+    line-height: 45/$ppr;
+  }
+}
+//  --------------------
+//  my-rem
+//  --------------------
+
+.bar-nav {
+  background-color: #235f97;
+  color: #fff;
+
+  button {
+    color: #fff !important;
+  }
+
+  .icon-callback {
+    background-image: url("../image/icon-callback-48x48.png");
+    background-repeat: no-repeat;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .title {
+    color: #fff;
+  }
+
+  .button.button-link {}
+}
+
+.bar-nav~.content {}
+
+.bar-tab {
+  background-color: white;
+
+  .icon-sy {
+    background-image: url("../image/icon-sy-48x49.png");
+    background-repeat: no-repeat;
+  }
+
+  .icon-account {
+    background-image: url("../image/icon-account-54x49.png");
+    background-repeat: no-repeat;
+  }
+
+  .icon-share1 {
+    background-image: url("../image/icon-share-48x49.png");
+    background-repeat: no-repeat;
+  }
+
+  .icon-my {
+    background-image: url("../image/icon-my-45x49.png");
+    background-repeat: no-repeat;
+  }
+
+  .icon {
+    width: 30/$ppr !important;
+    background-size: contain;
+  }
+
+  .tab-label {
+    color: #999;
+  }
+
+  .tab-item {}
+}

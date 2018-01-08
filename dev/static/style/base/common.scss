@@ -1,0 +1,90 @@
+$ppr: 640*40/750/rem;
+
+.bar-nav {
+  background-color: #235f97;
+  height: 90/$ppr;
+  line-height: 90/$ppr;
+  color: #fff;
+
+  .icon-callback {
+    background-image: url("../image/icon-callback-48x48.png");
+    background-size: 48/$ppr 48/$ppr;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 48/$ppr;
+    height: 48/$ppr;
+    margin-left: 20/$ppr;
+  }
+
+  .icon-cartshop {
+    background-image: url("../image/icon-cart-48x48.png");
+    background-size: 48/$ppr 48/$ppr;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 48/$ppr;
+    height: 48/$ppr;
+    margin-right: 20/$ppr;
+  }
+
+  .title {
+    color: #fff;
+    font-size: 32/$ppr;
+    height: 90/$ppr;
+    line-height: 90/$ppr;
+  }
+
+  .button.button-link {
+    height: 90/$ppr;
+    line-height: 90/$ppr;
+  }
+}
+.bar-nav~.content{
+  top:90/$ppr;
+  bottom: 100/$ppr;
+}
+
+.bar-tab {
+  height: 100/$ppr;
+
+  .icon-sy {
+    background-image: url("../image/icon-sy-48x49.png");
+    background-size: 48/$ppr 49/$ppr;
+    background-repeat: no-repeat;
+    width: 48/$ppr;
+    height: 49/$ppr !important;
+    display: inline-block;
+  }
+
+  .icon-account {
+    background-image: url("../image/icon-account-54x49.png");
+    background-size: 54/$ppr 49/$ppr;
+    background-repeat: no-repeat;
+    width: 54/$ppr;
+    height: 49/$ppr !important;
+    display: inline-block;
+  }
+
+  .icon-share1 {
+    width: 48/$ppr;
+    height: 49/$ppr !important;
+    background-image: url("../image/icon-share-48x49.png");
+    background-size: 48/$ppr 49/$ppr;
+    background-repeat: no-repeat;
+  }
+  .icon-my {
+    width: 45/$ppr;
+    height: 49/$ppr !important;
+    background-image: url("../image/icon-my-45x49.png");
+    background-size: 48/$ppr 49/$ppr;
+    background-repeat: no-repeat;
+  }
+
+  .tab-label {
+    font-size: 18/$ppr;
+    color: #999;
+  }
+
+  .tab-item {
+    height: 100/$ppr !important;
+  }
+}

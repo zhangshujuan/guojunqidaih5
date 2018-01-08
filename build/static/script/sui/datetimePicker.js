@@ -1,0 +1,7 @@
+/**
+ * @author 
+ * @email 
+ * @descrip zhong'ou wechat.
+ * @version v1.0.0
+ */
+define(function(require,exports,module){var e=require("zepto");require("./Picker"),+function($){"use strict";var e=new Date,t=function(e){for(var t=[],n=1;n<=(e||31);n++)t.push(n<10?"0"+n:n);return t},n=function(e,n){var u=new Date(n,parseInt(e)+1-1,1),r=new Date(u-1);return t(r.getDate())},u=function(e){return e<10?"0"+e:e},r="01 02 03 04 05 06 07 08 09 10 11 12".split(" "),a=function(){for(var e=[],t=1950;t<=2030;t++)e.push(t);return e}(),o={rotateEffect:!1,value:[e.getFullYear(),u(e.getMonth()+1),u(e.getDate()),e.getHours(),u(e.getMinutes())],onChange:function(e,t,u){var r=n(e.cols[1].value,e.cols[0].value),a=e.cols[2].value;a>r.length&&(a=r.length),e.cols[2].setValue(a)},formatValue:function(e,t,n){return n[0]+"-"+t[1]+"-"+t[2]+" "+t[3]+":"+t[4]},cols:[{values:a},{values:r},{values:t()},{divider:!0,content:"  "},{values:function(){for(var e=[],t=0;t<=23;t++)e.push(t);return e}()},{divider:!0,content:":"},{values:function(){for(var e=[],t=0;t<=59;t++)e.push(t<10?"0"+t:t);return e}()}]};$.fn.datetimePicker=function(e){return this.each(function(){if(this){var t=$.extend(o,e);$(this).picker(t),e.value&&$(this).val(t.formatValue(t,t.value,t.value))}})}}(e)});

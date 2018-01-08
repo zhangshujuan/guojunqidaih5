@@ -1,0 +1,7 @@
+/**
+ * @author 
+ * @email 
+ * @descrip zhong'ou wechat.
+ * @version v1.0.0
+ */
+.bar-nav{background-color:#235f97;height:2.63672rem;line-height:2.63672rem;color:#fff}.bar-nav .icon-callback,.bar-nav .icon-cartshop{background-size:1.40625rem 1.40625rem;height:1.40625rem;background-repeat:no-repeat;width:1.40625rem;display:inline-block}.bar-nav .icon-callback{background-image:url(../image/icon-callback-48x48.png);margin-left:.58594rem}.bar-nav .icon-cartshop{background-image:url(../image/icon-cart-48x48.png);margin-right:.58594rem}.bar-nav .button.button-link,.bar-nav .title{height:2.63672rem;line-height:2.63672rem}.bar-nav .title{color:#fff;font-size:.9375rem}.bar-nav~.content{top:2.63672rem;bottom:2.92969rem}.bar-tab{height:2.92969rem}.bar-tab .icon-sy{background-image:url(../image/icon-sy-48x49.png);background-size:1.40625rem 1.43555rem;background-repeat:no-repeat;width:1.40625rem;height:1.43555rem!important;display:inline-block}.bar-tab .icon-account{background-image:url(../image/icon-account-54x49.png);background-size:1.58203rem 1.43555rem;background-repeat:no-repeat;width:1.58203rem;height:1.43555rem!important;display:inline-block}.bar-tab .icon-my,.bar-tab .icon-share1{height:1.43555rem!important;background-size:1.40625rem 1.43555rem;background-repeat:no-repeat}.bar-tab .icon-share1{width:1.40625rem;background-image:url(../image/icon-share-48x49.png)}.bar-tab .icon-my{width:1.31836rem;background-image:url(../image/icon-my-45x49.png)}.bar-tab .tab-label{font-size:.52734rem;color:#999}.bar-tab .tab-item{height:2.92969rem!important}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>发票信息</title>
+        <link rel="stylesheet" href="../static/style/sui.css">
+        <link rel="stylesheet" href="../static/style/bill.css">
+        <link rel="stylesheet" href="../static/script/swiper/swiper-3.4.0.min.css">
+    </head>
+
+    <body>
+
+        <div class="page page-current">
+            <!-- 标题栏 -->
+            <header class="bar bar-nav">
+                <button class="button button-link button-nav pull-left">
+                    <span class="icon icon-callback"></span>
+                </button>
+                <h1 class="title">发票信息</h1>
+            </header>
+
+            <!-- 工具栏 -->
+            <nav class="bar bar-tab">
+                <a class="tab-item external active" href="#">
+                    <span class="icon icon-sy"></span>
+                    <span class="tab-label">首页</span>
+                </a>
+                <a class="tab-item external" href="#">
+                    <span class="icon icon-account"></span>
+                    <span class="tab-label">开户</span>
+                </a>
+                <a class="tab-item external" href="#">
+                    <span class="icon icon-share1"></span>
+                    <span class="tab-label">分享</span>
+                </a>
+                <a class="tab-item external" href="#">
+                    <span class="icon icon-my"></span>
+                    <span class="tab-label">我</span>
+                </a>
+            </nav>
+
+            <!-- 这里是页面内容区 -->
+            <div class="content">
+                <section class="bill-contain">
+                    <div class="row first-line">
+                        <div class="pull-left"><input type="radio" name="type" id="">个人</div>
+                        <div class="pull-left"><input type="radio" name="type" id="">公司</div>
+                    </div>
+                    <div class="list-block">
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">发票抬头</div>
+                                        <div class="item-input">
+                                            <input type="text" placeholder="请填写发票抬头">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content-block-title">邮寄地址</div>
+                    <div class="list-block">
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">所在地区</div>
+                                        <div class="item-input row" id="city_china">
+                                            <div class="col-33">
+                                                <select class="province select" disabled="disabled">
+                                                    <option>请选择</option>
+                                                    <option value="浙江省" selected>浙江省</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-33">
+                                                <select class="city select" disabled="disabled">
+                                                    <option>请选择</option>
+                                                    <option value="杭州市" selected>杭州市</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-33">
+                                                <select class="area select" disabled="disabled">
+                                                    <option>请选择</option>
+                                                    <option value="西湖区" selected>西湖区</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">收件地址</div>
+                                        <div class="item-input">
+                                            <input type="text" placeholder="请输入收件地址">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">客户姓名</div>
+                                        <div class="item-input">
+                                            <input type="text" placeholder="请输入客户姓名">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">收件地址</div>
+                                        <div class="item-input">
+                                            <input type="text" placeholder="请输入收件地址">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="btn-bottom">
+                    <div class="content-block">
+                        <div class="row">
+                            <div class="col-60"><a href="#" class="button button-gray">不开发票</a></div>
+                            <div class="col-40"><a href="#" class="button button-big button-fill button-danger">保存</a></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <script src="../static/script/zepto/zepto-1-1-6.js"></script>
+        <script src="../static/script/zepto/jquery.cxselect.js"></script>
+        <script>
+            $(function() {
+                $('#city_china').cxSelect({
+                    url: '../static/script/zepto/cityData.min.json',               // 如果服务器不支持 .json 类型文件，请将文件改为 .js 文件
+                    selects: ['province', 'city', 'area'],  // 数组，请注意顺序
+                    emptyStyle: 'none'
+                });
+            });
+        </script>
+    </body>
+</html>

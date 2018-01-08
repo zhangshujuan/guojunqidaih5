@@ -1,0 +1,86 @@
+.overlay {
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  bottom: 2.92969rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  .pad {
+    position: fixed;
+    background-color: rgba(255,255,255,0.95);
+    height: 7.05rem;
+    width: 100%;
+    bottom: 3.55rem;
+
+    .title {
+      text-align: center;
+      margin-top: 0.6rem;
+      line-height: 0.7rem;
+      font-size: 0.7rem;
+    }
+
+    .shareItems {
+      margin-top: 2rem;
+      width: 100%;
+
+      ul {
+        width: 100%;
+        list-style: none;
+        padding: 0;
+
+        li {
+          float: left;
+          width: 25%;
+          list-style: none;
+
+          .shareItemIcon {
+            border-radius: 0.6rem;
+            height: 3rem;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            width: 3rem;
+            margin: 0 auto;
+            background-color: white;
+          }
+
+          &:nth-child(1) .shareItemIcon {
+            background: url("../image/share_icon_wechat.png") center center no-repeat;
+            background-size: 65%;
+          }
+
+          &:nth-child(2) .shareItemIcon {
+            background: url("../image/share_icon_session.png") center center no-repeat;
+            background-size: 65%;
+          }
+
+          &:nth-child(3) .shareItemIcon {
+            background: url("../image/share_icon_weibo.png") center center no-repeat;
+            background-size: 65%;
+          }
+
+          &:nth-child(4) .shareItemIcon {
+            background: url("../image/share_icon_qq.png") center center no-repeat;
+            background-size: 65%;
+          }
+
+          .shareItemTitle {
+            width: 3rem;
+            font-size: 0.5rem;
+            text-align: center;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+
+  .arrow {
+    background: url(../image/arrow.png) 65% center no-repeat;
+    background-size: 5%;
+    position: fixed;
+    bottom: 3.15rem;
+    height: 0.45rem;
+    width: 100%;
+  }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="telephone=no,email=no" name="format-detection">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>产品详情</title>
+        <link rel="stylesheet" href="../static/style/sui.css">
+        <link rel="stylesheet" href="../static/style/productDetail.css">
+        <link rel="stylesheet" href="../static/script/swiper/swiper-3.4.0.min.css">
+    </head>
+
+    <body>
+
+        <div class="page page-current">
+            <!-- 标题栏 -->
+            <header class="bar bar-nav">
+                <button class="button button-link button-nav pull-left">
+                    <span class="icon icon-callback"></span>
+                </button>
+                <button class="button button-link button-nav pull-right">
+                    <span class="icon icon-cartshop"></span>
+                </button>
+                <h1 class="title">产品详情</h1>
+            </header>
+
+            <!-- 工具栏 -->
+            <nav class="bar bar-tab">
+                <a class="tab-item external active" href="#">
+                    <span class="icon icon-sy"></span>
+                    <span class="tab-label">首页</span>
+                </a>
+                <a class="tab-item external" href="#">
+                    <span class="icon icon-account"></span>
+                    <span class="tab-label">开户</span>
+                </a>
+                <a class="tab-item external" href="#">
+                    <span class="icon icon-share1"></span>
+                    <span class="tab-label">分享</span>
+                </a>
+                <a class="tab-item external" href="#">
+                    <span class="icon icon-my"></span>
+                    <span class="tab-label">我</span>
+                </a>
+            </nav>
+
+            <!-- 这里是页面内容区 -->
+            <div class="content">
+                <section class="product-top">
+                    <img src="../static/image/pic-01-599x540.png" alt="">
+                    <div class="row">
+                        <div class="pull-left col-100">
+                            <span class="ft12">VIP价格</span>
+                            <span class="ft28">￥23,200.00</span>
+                        </div>
+                    </div>
+                    <div class="product-title">CTP产品包</div>
+                </section>
+                <section>
+                    <div class="card">
+                        <div class="card-header">产品详情</div>
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                <div class="list-block">
+                                    <ul>
+                                        <li class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">推荐服务机型</div>
+                                                <div class="item-after">超微服务器</div>
+                                            </div>
+                                        </li>
+                                        <li class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">操作系统</div>
+                                                <div class="item-after">Linux</div>
+                                            </div>
+                                        </li>
+                                        <li class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">光网卡</div>
+                                                <div class="item-after">Solarflare万兆多模模块</div>
+                                            </div>
+                                        </li>
+                                        <li class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">系统选型</div>
+                                                <div class="item-after">miniCTP</div>
+                                            </div>
+                                        </li>
+                                        <li class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">行情源选型</div>
+                                                <div class="item-after">UDP快速行情</div>
+                                            </div>
+                                        </li>
+                                        <li class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">机房位置选择</div>
+                                                <div class="item-after">移动机房</div>
+                                            </div>
+                                        </li>
+                                        <li class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">软件选型</div>
+                                                <div class="item-after">TB开拓者</div>
+                                            </div>
+                                        </li>
+                                        <li class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">操作</div>
+                                                <div class="item-after">套利</div>
+                                            </div>
+                                        </li>
+                                        <li class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">所需费用约</div>
+                                                <div class="item-after">109,000(元)</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="btn-bottom">
+                    <div class="content-block">
+                        <div class="row">
+                            <div class="col-100"><a href="#" class="button button-big button-fill button-danger">立即预约</a></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <script src="../static/script/zepto/zepto-1-1-6.js"></script>
+        <script src="../static/script/sui/sm.js"></script>
+        <script>
+            $(function() {
+                $(".card-header").click(function () {
+                    $(".card-content").toggle();
+                });
+
+            });
+        </script>
+    </body>
+</html>
